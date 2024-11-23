@@ -31,7 +31,7 @@ public class AnimalParameterizedTest {
 
 
     @Test
-    public void getFoodWithCorrectSquadReturnsListOfFood() throws Exception {
+    public void getFoodWithCorrectSquadReturnsListOfFoodTest() throws Exception {
 
         Animal animal = new Animal();
         List<String> actualList = animal.getFood(squad);

@@ -16,7 +16,7 @@ public class FelineTest {
 
 
     @Test
-    public void eatMeatCallsGetFoodMethodWithPredatorAttribute() throws Exception {
+    public void eatMeatCallsGetFoodMethodWithPredatorAttributeTest() throws Exception {
         felineSpy.eatMeat();
 
         Mockito.verify(felineSpy, Mockito.times(1)).getFood(TestValues.PREDATOR);
@@ -24,14 +24,14 @@ public class FelineTest {
 
 
     @Test
-    public void eatMeatReturnsPredatorFoodList() throws Exception {
+    public void eatMeatReturnsPredatorFoodListTest() throws Exception {
         Feline feline = new Feline();
         assertEquals(TestValues.PREDATORS_FOOD_LIST, feline.eatMeat());
     }
 
 
     @Test
-    public void getFamilyReturnsFelineText() {
+    public void getFamilyReturnsFelineTextTest() {
         Feline feline = new Feline();
 
         assertEquals(TestValues.FELINE, feline.getFamily());
@@ -39,7 +39,7 @@ public class FelineTest {
 
 
     @Test
-    public void getKittensWithoutAttributesCallsGetKittensWithOneInAttribute() {
+    public void getKittensWithoutAttributesCallsGetKittensWithOneInAttributeTest() {
         felineSpy.getKittens();
 
         Mockito.verify(felineSpy, Mockito.times(1)).getKittens(1);
@@ -47,7 +47,7 @@ public class FelineTest {
 
 
     @Test
-    public void getKittensWith5InAttributeReturns5() {
+    public void getKittensWith5InAttributeReturns5Test() {
         Feline feline = new Feline();
 
         assertEquals(5, feline.getKittens(5));
