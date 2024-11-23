@@ -14,6 +14,7 @@ public class AnimalParameterizedTest {
     private final String squad;
     private final List<String> expectedListOfFood;
 
+
     public AnimalParameterizedTest(String squad, List<String> expectedListOfFood){
         this.squad = squad;
         this.expectedListOfFood = expectedListOfFood;
@@ -28,11 +29,11 @@ public class AnimalParameterizedTest {
         };
     }
 
+
     @Test
     public void getFoodWithCorrectSquadReturnsListOfFood() throws Exception {
 
         Animal animal = new Animal();
-
         List<String> actualList = animal.getFood(squad);
 
         assertEquals(actualList, expectedListOfFood);
