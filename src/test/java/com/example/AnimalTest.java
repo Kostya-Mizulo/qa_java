@@ -19,17 +19,17 @@ public class AnimalTest {
     public void getFoodIncorrectSquadThrowsException() {
 
         try {
-            animal.getFood("Всеядное");
+            animal.getFood(TestValues.OMNIVORE);
             fail("Exception expected but not thrown");
         } catch (Exception e) {
-            assertEquals(e.getMessage(), "Неизвестный вид животного, используйте значение Травоядное или Хищник");
+            assertEquals(e.getMessage(), TestValues.UNSUPPORTED_ANIMAL_TYPE_EXCEPTION);
         }
     }
 
     @Test
     public void getFamilyReturnsFamilyDescription() {
 
-        String expectedResult = "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи";
+        String expectedResult = TestValues.GET_FAMILY_ANIMAL_TEXT;
         String actualResult = animal.getFamily();
 
         assertEquals(expectedResult, actualResult);

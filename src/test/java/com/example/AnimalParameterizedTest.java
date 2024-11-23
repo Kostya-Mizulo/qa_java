@@ -24,8 +24,8 @@ public class AnimalParameterizedTest {
     @Parameterized.Parameters(name = "Тестовые данные: тип животного - {0}, ожидаемый ответ - {1}")
     public static Object[][] getParameters(){
         return new Object[][] {
-                {"Травоядное", List.of("Трава", "Различные растения")},
-                {"Хищник", List.of("Животные", "Птицы", "Рыба")}
+                {TestValues.GRASS_FEEDING, TestValues.GRASS_FOOD_LIST},
+                {TestValues.PREDATOR, TestValues.PREDATORS_FOOD_LIST}
         };
     }
 
