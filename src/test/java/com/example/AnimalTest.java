@@ -16,7 +16,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void getFoodIncorrectSquadThrowsException() {
+    public void getFoodIncorrectSquadThrowsExceptionTest() {
 
         try {
             animal.getFood(TestValues.OMNIVORE);
@@ -27,7 +27,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void getFamilyReturnsFamilyDescription() {
+    public void getFamilyReturnsFamilyDescriptionTest() {
 
         String expectedResult = TestValues.GET_FAMILY_ANIMAL_TEXT;
         String actualResult = animal.getFamily();
