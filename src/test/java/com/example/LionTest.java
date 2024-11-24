@@ -16,7 +16,7 @@ public class LionTest {
 
 
     @Test
-    public void getKittensCallsFelineGetKittensWithoutAttribute() throws Exception {
+    public void getKittensCallsFelineGetKittensWithoutAttributeTest() throws Exception {
         Lion lion = new Lion(TestValues.SEX_MALE, felineMock);
         lion.getKittens();
 
@@ -34,7 +34,7 @@ public class LionTest {
 
 
     @Test
-    public void doesHaveManeWhenMaleReturnsTrue() throws Exception {
+    public void doesHaveManeWhenMaleReturnsTrueTest() throws Exception {
         Lion lion = new Lion(TestValues.SEX_MALE, felineMock);
 
         assertTrue(lion.doesHaveMane());
@@ -42,7 +42,7 @@ public class LionTest {
 
 
     @Test
-    public void doesHaveManeWhenFemaleReturnsFalse() throws Exception {
+    public void doesHaveManeWhenFemaleReturnsFalseTest() throws Exception {
         Lion lion = new Lion(TestValues.SEX_FEMALE, felineMock);
 
         assertFalse(lion.doesHaveMane());
@@ -50,11 +50,11 @@ public class LionTest {
 
 
     @Test
-    public void createLionWithWrongSexThrowsException(){
+    public void createLionWithWrongSexThrowsExceptionTest(){
         try {
             Lion lion = new Lion(TestValues.WRONG_SEX, felineMock);
 
-            fail("Exception expected but not thrown");
+            fail(TestValues.EXCEPTION_EXPECTED_NOT_TRHOWN);
         } catch (Exception e) {
             assertEquals(TestValues.WRONG_SEX_EXCEPTION_TEXT,e.getMessage());
         }
@@ -62,7 +62,7 @@ public class LionTest {
 
 
     @Test
-    public void getFoodCallsFelineGetFoodWithPredator() throws Exception {
+    public void getFoodCallsFelineGetFoodWithPredatorTest() throws Exception {
         Lion lion = new Lion(TestValues.SEX_MALE, felineMock);
         lion.getFood();
 
@@ -71,7 +71,7 @@ public class LionTest {
 
 
     @Test
-    public void getFoodReturnsListOfPredatorFood() throws Exception {
+    public void getFoodReturnsListOfPredatorFoodTest() throws Exception {
         Lion lion = new Lion(TestValues.SEX_MALE, felineMock);
         Mockito.when(felineMock.getFood(TestValues.PREDATOR)).thenReturn(TestValues.PREDATORS_FOOD_LIST);
 
