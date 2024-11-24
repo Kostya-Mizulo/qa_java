@@ -2,6 +2,7 @@ package com.example;
 
 import java.util.List;
 
+
 public class TestValues {
     public static final String GRASS_FEEDING = "Травоядное";
     public static final String PREDATOR = "Хищник";
@@ -18,4 +19,8 @@ public class TestValues {
     public static final String SEX_FEMALE = "Самка";
     public static final String WRONG_SEX = "Самцо";
     public static final String ALEX_LION_LIVING_PLACE = "Нью-Йоркский зоопарк";
+    public static final String EXCEPTION_EXPECTED_NOT_TRHOWN = "Exception expected but not thrown";
+    public static final int ZERO_VALUE = 0;
+    public static final int ONE_VALUE = 1;
+    public static final int FIVE_VALUE = 5;
 }

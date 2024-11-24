@@ -5,13 +5,15 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
 import static junit.framework.TestCase.assertEquals;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
     @Mock
     Feline felineMock;
+
+
     @Test
     public void getSoundReturnsMyauTest() {
         Cat cat = new Cat(felineMock);

@@ -36,6 +36,6 @@ public class AlexLionTest {
 
     @Test
     public void getKittensReturnsZeroTest() {
-        assertEquals(0, alexLion.getKittens());
+        assertEquals(TestValues.ZERO_VALUE, alexLion.getKittens());
     }
 }
