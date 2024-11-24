@@ -9,6 +9,7 @@ public class TestValues {
     public static final String FELINE = "Кошачьи";
     public static final List<String> GRASS_FOOD_LIST = List.of("Трава", "Различные растения");
     public static final List<String> PREDATORS_FOOD_LIST = List.of("Животные", "Птицы", "Рыба");
+    public static final List<String> ALEX_LION_FRIENDS = List.of("Зебра Марти", "Бегеметиха Глория", "Жираф Мелман");
     public static final String UNSUPPORTED_ANIMAL_TYPE_EXCEPTION = "Неизвестный вид животного, используйте значение Травоядное или Хищник";
     public static final String WRONG_SEX_EXCEPTION_TEXT = "Используйте допустимые значения пола животного - самец или самка";
     public static final String GET_FAMILY_ANIMAL_TEXT = "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи";
@@ -16,4 +17,5 @@ public class TestValues {
     public static final String SEX_MALE = "Самец";
     public static final String SEX_FEMALE = "Самка";
     public static final String WRONG_SEX = "Самцо";
+    public static final String ALEX_LION_LIVING_PLACE = "Нью-Йоркский зоопарк";
 }
